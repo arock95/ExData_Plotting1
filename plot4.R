@@ -15,7 +15,6 @@ power$gooddate <- as.POSIXct(paste(power$date, power$time))
 
 # plot 4
 png(filename="plot4.png", width=480, height=480)
-par("mar"=c(4,4,1,1))
 par("mfrow" = c(2,2))
 with(power, plot(gooddate,globalactivepower, type="l", ylab="Global Active Power", xlab=""))
 
